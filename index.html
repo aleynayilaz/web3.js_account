@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metamask Accounts</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class=" flex w-screen h-screen justify-center items-center">
+    <div
+        class="flex-col space-y-2 py-20 px-20 items-center border-2 rounded-xl bg-indigo-100 bg-gradient-to-r from-indigo-200 ">
+        <button
+            class="enableEthereumButton mx-auto bg-indigo-400 p-2 rounded-md text-white bg-gradient-to-r from-indigo-300">Enable
+            Ethereum</button>
+        <div class="intro text-2xl font-bold" id="intro">
+            <h2>Account: <span class="showAccount "></span></h2>
+
+            <h2>Balance: <span class="showBalance "></span></h2>
+        </div>
+        <input type="text" class="py-2" id="amount" placeholder="Enter amount. . .">
+        <button
+            class="sendEthButton btn mx-auto rounded-md bg-indigo-400 p-2 text-white bg-gradient-to-r from-indigo-300">Send
+            Eth</button>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
